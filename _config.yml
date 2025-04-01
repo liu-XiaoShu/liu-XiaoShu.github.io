@@ -72,16 +72,10 @@ analytics:
     id: # fill in your Cloudflare Web Analytics token
   fathom:
     id: # fill in your Fathom Site ID
-  provider:
-    busuanzi  # 启用不蒜子
-  busuanzi:
-    site_uv: true     # 显示总访客数
-    site_pv: true     # 显示总浏览量
-    page_pv: true    # 显示每篇文章浏览量
 
 # Page views settings
-#pageviews:
-#  provider: # now only supports 'goatcounter'
+pageviews:
+  provider: goatcounter # now only supports 'goatcounter'
 
 # Prefer color scheme setting.
 #
