@@ -293,14 +293,28 @@ order: 4
     grid-template-columns: 1fr;
   }
 }
+
+.about-lab__hits {
+  margin: 0 0 1.25rem;
+}
+
+.about-lab__hits img {
+  display: block;
+  height: 20px;
+  width: auto;
+}
 </style>
 
 <div class="about-lab" markdown="0">
+{% assign _pv_host = site.url | remove: 'https://' | remove: 'http://' | strip | split: "/" | first %}
   <header class="about-lab__hero">
     <p class="about-lab__eyebrow"><span aria-hidden="true"></span> Digital Lab · Profile</p>
     <h2 class="about-lab__title">liu-XiaoShu · 小树</h2>
     <p class="about-lab__subtitle">
       个人技术笔记站：聚焦<strong style="color:#e2e8f0">嵌入式</strong>、<strong style="color:#e2e8f0">工具链与脚本</strong>，辅以 <strong style="color:#e2e8f0">C / Python</strong> 与工程踩坑记录。偏实战、可检索，写给未来的自己与同路人。
+    </p>
+    <p class="about-lab__hits">
+      <img src="https://visitor-badge.laobi.icu/badge?page_id={{ _pv_host }}_about" alt="About 页访问" width="auto" height="20" loading="lazy" decoding="async" referrerpolicy="no-referrer-when-downgrade">
     </p>
     <div class="about-lab__actions">
       <a class="about-lab__btn about-lab__btn--primary" href="https://github.com/liu-XiaoShu" rel="noopener noreferrer" target="_blank">
