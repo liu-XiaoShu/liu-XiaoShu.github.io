@@ -1,0 +1,31 @@
+<footer>
+  <p>
+    {{- '©' }}
+    {{ 'now' | date: '%Y' }}
+
+    {% if site.social.links %}
+      {{ site.social.name }}.
+    {% else %}
+      {{ site.social.name }}.
+    {% endif %}
+
+    {% if site.data.locales[include.lang].copyright.brief %}
+      {{- site.data.locales[include.lang].copyright.brief -}}
+    {% endif %}
+
+    {% capture _platform %}Jekyll{% endcapture %}
+    {% capture _theme %}Chirpy{% endcapture %}
+
+    {{ site.data.locales[include.lang].meta | replace: ':PLATFORM', _platform | replace: ':THEME', _theme }}
+
+    <br />
+    <span class="d-inline-block mt-2">
+      <img
+        src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url={{ site.url | cgi_escape }}&count_bg=%236676EA&title_bg=%23555555&title=%E8%AE%BF%E9%97%AE&edge_flat=false"
+        width="auto"
+        height="20"
+        alt="访问量"
+        loading="lazy" />
+    </span>
+  </p>
+</footer>
