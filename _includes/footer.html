@@ -1,34 +1,27 @@
-<footer>
-  <p>
-    {{- '©' }}
-    {{ 'now' | date: '%Y' }}
 
-    {% if site.social.links %}
-      {{ site.social.name }}.
-    {% else %}
-      {{ site.social.name }}.
-    {% endif %}
 
-    {% if site.data.locales[include.lang].copyright.brief %}
-      {{- site.data.locales[include.lang].copyright.brief -}}
-    {% endif %}
 
-    {% capture _platform %}Jekyll{% endcapture %}
-    {% capture _theme %}Chirpy{% endcapture %}
+{{- '©' }}
+{{ 'now' | date: '%Y' }} 
 
-    {{ site.data.locales[include.lang].meta | replace: ':PLATFORM', _platform | replace: ':THEME', _theme }}
+{% if site.social.links %}
+{{ site.social.name }}.
+{% else %}
+{{ site.social.name }}.
+{% endif %}
 
-    {% assign pv_page_id = site.url | remove: 'https://' | remove: 'http://' | strip | split: '/' | first %}
-    <br />
-    <span class="d-inline-block mt-2">
-      <img
-        src="https://visitor-badge.laobi.icu/badge?page_id={{ pv_page_id }}"
-        width="auto"
-        height="20"
-        alt="访问量"
-        referrerpolicy="no-referrer-when-downgrade"
-        loading="lazy"
-        decoding="async" />
-    </span>
-  </p>
-</footer>
+{% if site.data.locales[include.lang].copyright.brief %}
+
+{{- site.data.locales[include.lang].copyright.brief -}}
+
+{% endif %}
+
+{% capture _platform %}Jekyll{% endcapture %}
+{% capture _theme %}Chirpy{% endcapture %}
+
+{{ site.data.locales[include.lang].meta | replace: ':PLATFORM', _platform | replace: ':THEME', _theme }}
+
+{% assign _pv_host = site.url | remove: 'https://' | remove: 'http://' | strip | split: "/" | first %}
+<br />
+<span class="d-inline-block mt-2"><img src="https://visitor-badge.laobi.icu/badge?page_id={{ _pv_host }}" width="auto" height="20" alt="访问量" loading="lazy" decoding="async" referrerpolicy="no-referrer-when-downgrade" /></span>
+
