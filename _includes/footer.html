@@ -18,14 +18,17 @@
 
     {{ site.data.locales[include.lang].meta | replace: ':PLATFORM', _platform | replace: ':THEME', _theme }}
 
+    {% assign pv_page_id = site.url | remove: 'https://' | remove: 'http://' | strip | split: '/' | first %}
     <br />
     <span class="d-inline-block mt-2">
       <img
-        src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url={{ site.url | cgi_escape }}&count_bg=%236676EA&title_bg=%23555555&title=%E8%AE%BF%E9%97%AE&edge_flat=false"
+        src="https://visitor-badge.laobi.icu/badge?page_id={{ pv_page_id }}"
         width="auto"
         height="20"
         alt="访问量"
-        loading="lazy" />
+        referrerpolicy="no-referrer-when-downgrade"
+        loading="lazy"
+        decoding="async" />
     </span>
   </p>
 </footer>
