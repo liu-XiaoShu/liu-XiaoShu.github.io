@@ -2,7 +2,13 @@
 title: "家庭健康档案系统：数据留在自家网络"
 date: 2026-05-14
 categories: [Web应用]
-tags: [Vue, TypeScript, FastAPI, SQLite, 家庭健康, 开源]
+tags:
+  - Vue
+  - TypeScript
+  - FastAPI
+  - SQLite
+  - 家庭健康
+  - 开源
 description: 自架 FastAPI + Vue 的家庭健康档案：SQLite 本地存储、局域网访问、体检批次与指标趋势；附开源仓库与自定义非商业许可说明。
 image: /assets/img/family-health-archive/home_page.png
 ---

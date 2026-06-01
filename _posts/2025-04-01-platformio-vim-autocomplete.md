@@ -2,10 +2,13 @@
 title: "为 PlatformIO 配置 Vim 自动补全与语法检查"
 date: 2025-04-01
 categories: [嵌入式技术]
-tags: [技术, 嵌入式开发, PlatformIO, Vim]
+tags:
+  - 技术
+  - 嵌入式开发
+  - PlatformIO
+  - Vim
 description: 为 PlatformIO 下的 Vim 配置 LSP 补全与语法检查，提升嵌入式开发效率。
 ---
-
 
 ------
 

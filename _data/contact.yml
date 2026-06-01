@@ -3,6 +3,10 @@
 - type: github
   icon: "fab fa-github"
 
+- type: csdn
+  icon: "fas fa-blog"
+  url: "https://blog.csdn.net/weixin_41596275?type=blog"
+
 - type: email
   icon: "fas fa-envelope"
   noblank: true # open link in current tab

@@ -303,6 +303,31 @@ order: 4
   height: 20px;
   width: auto;
 }
+
+.about-lab__csdn {
+  margin: 0 0 1.25rem;
+  padding: 0.85rem 1rem;
+  border-radius: 0.65rem;
+  border: 1px solid rgba(34, 211, 238, 0.22);
+  background: rgba(2, 6, 23, 0.45);
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: var(--al-muted);
+}
+
+.about-lab__csdn strong {
+  color: #e2e8f0;
+}
+
+.about-lab__csdn a {
+  color: var(--al-cyan) !important;
+  font-weight: 600;
+  text-decoration: none !important;
+}
+
+.about-lab__csdn a:hover {
+  text-decoration: underline !important;
+}
 </style>
 
 <div class="about-lab" markdown="0">
@@ -313,12 +338,20 @@ order: 4
     <p class="about-lab__subtitle">
       个人技术笔记站：聚焦<strong style="color:#e2e8f0">嵌入式</strong>、<strong style="color:#e2e8f0">工具链与脚本</strong>，辅以 <strong style="color:#e2e8f0">C / Python</strong> 与工程踩坑记录。偏实战、可检索，写给未来的自己与同路人。
     </p>
+    <p class="about-lab__csdn">
+      <strong>CSDN 博客（小树笔记）</strong>：本站多数技术文章自 CSDN 迁移并持续在此更新。
+      在 CSDN 可查看更早的互动与阅读数据。
+      <a href="https://blog.csdn.net/weixin_41596275?type=blog" rel="noopener noreferrer" target="_blank">打开 CSDN 主页 →</a>
+    </p>
     <p class="about-lab__hits">
       <img src="https://visitor-badge.laobi.icu/badge?page_id={{ _pv_host }}_about" alt="About 页访问" width="auto" height="20" loading="lazy" decoding="async" referrerpolicy="no-referrer-when-downgrade">
     </p>
     <div class="about-lab__actions">
       <a class="about-lab__btn about-lab__btn--primary" href="https://github.com/liu-XiaoShu" rel="noopener noreferrer" target="_blank">
         <i class="fab fa-github" aria-hidden="true"></i> GitHub
+      </a>
+      <a class="about-lab__btn about-lab__btn--ghost" href="https://blog.csdn.net/weixin_41596275?type=blog" rel="noopener noreferrer" target="_blank">
+        <i class="fas fa-blog" aria-hidden="true"></i> CSDN 博客
       </a>
       <a class="about-lab__btn about-lab__btn--ghost" href="mailto:liu_xiaoshu@163.com">
         <i class="fas fa-envelope" aria-hidden="true"></i> 邮件联系
@@ -336,8 +369,8 @@ order: 4
       <span>MCU · Linux 工具 · 自动化</span>
     </li>
     <li class="about-lab__metric">
-      <strong>托管</strong>
-      <span>Jekyll + GitHub Pages</span>
+      <strong>同步</strong>
+      <span>GitHub Pages · CSDN</span>
     </li>
   </ul>
 

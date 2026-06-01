@@ -2,10 +2,13 @@
 title: "使用 PlatformIO + Vim 搭建嵌入式开发环境"
 date: 2025-04-01
 categories: [嵌入式技术]
-tags: [技术, 嵌入式开发, PlatformIO, Vim]
+tags:
+  - 技术
+  - 嵌入式开发
+  - PlatformIO
+  - Vim
 description: 用 PlatformIO 与 Vim 搭建轻量嵌入式开发环境：安装、工程与烧录实践。
 ---
-
 
 ------
 

@@ -2,12 +2,12 @@
 title: "Clockwise 智能壁钟 DIY"
 date: 2026-03-15
 categories: [嵌入式]
-tags: [学习, DIY]
+tags:
+  - 学习
+  - DIY
 description: 基于 ESP32 与 64×64 RGB 矩阵屏复刻开源 Clockwise 智能壁钟：硬件、固件与实践经验。
 image: /assets/img/clockwise_xiaoshu/img/实物图1.jpg
 ---
-
-
 
 # Clockwise 智能壁钟：开源复刻与实践指南
 

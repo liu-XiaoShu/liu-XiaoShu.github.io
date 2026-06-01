@@ -2,7 +2,9 @@
 title: "C语言中的值传递和地址传递"
 date: 2025-06-29
 categories: [c语言学习]
-tags: [学习, c语言]
+tags:
+  - 学习
+  - c语言
 description: C 语言函数参数的值传递与地址传递区别、内存与示例代码。
 ---
 
